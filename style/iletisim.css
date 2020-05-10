@@ -1,0 +1,166 @@
+body {
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    box-sizing: border-box;
+    color: rgba(248, 248, 248, 0.938);
+}
+
+
+/* bacground image*/
+
+#fancy-form {
+    background: linear-gradient(rgba(66, 66, 58, 0.863), rgba(0, 0, 0, 0.4)), url("../img/c4.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#fancy-form .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.form-section {
+    margin-top: 5rem;
+    display: grid;
+    grid-gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* form-left styling */
+
+.form-left h1 {
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.form-left h4 {
+    padding: 0;
+    margin: 0;
+    color: rgb(243, 235, 235);
+}
+
+.line {
+    border-bottom: 2px solid rgb(12, 168, 207);
+    width: 8%;
+    margin-left: 0;
+}
+
+.form-left span {
+    color: rgb(187, 182, 182);
+    font-weight: bold;
+}
+
+.form-left hr {
+    width: 25rem;
+    margin-left: 0;
+    border: 1px solid(53, 53, 52);
+}
+
+.fa {
+    padding: 8px;
+    font-size: 18px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(139, 161, 175);
+}
+
+.fa:hover {
+    color: rgb(16, 135, 190);
+}
+
+
+/* form-right styling */
+
+.form-right h1 {
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    padding-top: 2rem;
+}
+
+form h5 {
+    padding: 0;
+    margin: 0;
+    color: rgb(228, 218, 218);
+}
+
+form input {
+    padding: 0.6rem;
+    width: 27rem;
+    border: none;
+    background-color: rgba(136, 133, 133, 0.3);
+    color: #fff;
+    outline: none;
+    border: none;
+}
+
+form textarea {
+    padding: 0.6rem;
+    width: 27rem;
+    border: none;
+    background-color: rgba(136, 133, 133, 0.3);
+    color: #fff;
+    outline: none;
+    border: none;
+}
+
+form button {
+    width: 9rem;
+    background: rgb(12, 168, 207);
+    padding: 5px;
+    outline: none;
+    border-color: transparent;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 0.9rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.form-right #error_message {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #a09f9f;
+    text-align: center;
+    font-size: 10px;
+    transition: all 0.5s ease;
+}
+
+@media (max-width: 968px) {
+    #fancy-form .form-section {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    #fancy-form {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/c4.jpg");
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        width: 100%;
+    }
+    .form-section .form-right {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .fa {
+        padding: 8px;
+        font-size: 18px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        color: rgb(228, 218, 218);
+    }
+}

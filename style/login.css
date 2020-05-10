@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC|Roboto:300,400&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Bad+Script|Rajdhani|Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Niconne|Pavanam&display=swap');
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/log2.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+form {
+    position: relative;
+    z-index: 1;
+    background: rgba(89, 177, 218, 0.6);
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+}
+
+form input {
+    font-family: "Roboto", sans-serif;
+    outline: 1;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #1e8f5a;
+    cursor: pointer;
+}
+
+form button:hover,
+form button:active {
+    background: #43A047;
+}
+
+.error {
+    margin: 15px 0 0;
+    color: rgb(167, 43, 12);
+    font-size: 25px;
+    text-align: center;
+}
+
+.success {
+    margin: 15px 0 0;
+    color: rgb(7, 124, 13);
+    font-size: 25px;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: none;
+    font-size: 19px;
+}
+
+.signature {
+    color: #384147;
+    text-align: center;
+    user-select: none;
+}
+
+.signature-heading {
+    font-family: 'Niconne', cursive;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.signature-subhead {
+    font-family: 'Bad Script', cursive;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.navbar {
+    background-color: #384147;
+}
+
+.navbar-toggler i {
+    color: #fff;
+    font-size: 30px;
+}
+
+.navbar-toggler .fa-times {
+    display: none;
+}
+
+.navbar-toggler.menu-open .fa-bars {
+    display: none;
+}
+
+.navbar-toggler.menu-open .fa-times {
+    display: block;
+}
+
+.navbar-nav {
+    padding: 30px;
+}
+
+.nav-link {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Playfair Display SC', sans-serif;
+    font-size: 18px;
+    transition: all 0.5s ease;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+
+/* gallery*/
+
+.text-muted {
+    color: rgba(255, 255, 255, .7) !important;
+}
+
+.input-group .btn {
+    background-color: #384147;
+    color: #fff;
+    transition: all 1s ease-out;
+}
+
+.input-group .btn:hover {
+    opacity: .6;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        background-color: transparent;
+    }
+    .navbar-nav {
+        padding: 0;
+    }
+    .nav-link {
+        color: #384147;
+    }
+    .nav-link:hover {
+        color: inherit;
+    }
+    nav:hover .nav-link:not(:hover) {
+        opacity: .5;
+    }
+    .about-content {
+        position: relative;
+        display: block;
+    }
+    .about-description {
+        position: absolute;
+        top: 80%;
+        transform: translateY(-50%);
+        width: 60%;
+        outline-offset: -10px;
+    }
+    .about-image img {
+        width: 70%;
+        margin-left: auto;
+    }
+    .lihtboxOverlay {
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .about-description {
+        top: 50%;
+        width: 40%;
+        outline: 10px solid rgba(56, 65, 71, .5);
+        outline-offset: -20px;
+    }
+    .about-image img {
+        width: 80%;
+    }
+    .lb-close {
+        position: absolute;
+        float: none;
+        top: -20px;
+        right: 30px;
+    }
+}
