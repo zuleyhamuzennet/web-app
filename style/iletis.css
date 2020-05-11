@@ -1,46 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC|Roboto:300,400&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css');
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Bad+Script|Rajdhani|Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Jost&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Niconne|Pavanam&display=swap');
-body {
-    background: rgb(191, 223, 191);
-}
-
-form {
-    position: relative;
-    z-index: 1;
-    background: rgba(89, 177, 218, 0.6);
-    max-width: 360px;
-    margin: 0 auto 100px;
-    padding: 45px;
-    text-align: center;
-    background: rgb(101, 151, 103);
-}
-
 a:hover {
     text-decoration: none;
     font-size: 19px;
 }
 
-img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.about-content {
-    display: flex;
-    flex-direction: column;
-}
-
-.about-description {
-    width: 100%;
-    background-color: #fff;
-    padding: 30px;
-    outline: 1px solid rgba(56, 65, 71, 0.5);
-    outline-offset: -5px;
-    order: 2;
-    margin-top: 100px;
+body {
+    background: rgb(185, 214, 196);
 }
 
 .signature {
@@ -53,14 +22,6 @@ img {
     font-family: 'Niconne', cursive;
     font-size: 50px;
     margin-bottom: 30px;
-}
-
-header {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .signature-subhead {
@@ -93,11 +54,10 @@ header {
 
 .navbar-nav {
     padding: 30px;
-    margin-left: 180px;
 }
 
 .nav-link {
-    color: #fff;
+    color: #384147;
     text-transform: uppercase;
     font-family: 'Playfair Display SC', sans-serif;
     font-size: 18px;
@@ -105,78 +65,25 @@ header {
 }
 
 .nav-link:hover {
-    color: #fff;
+    color: #384147;
 }
 
-#header {
-    display: grid;
-    grid-template-columns: 2fr 5fr;
-    background: rgb(41, 1, 59);
-    color: white;
+hr {
+    background: white;
 }
 
-#left-mrgm {
-    margin-left: 40px;
-    font-weight: bold;
+.contact-form {
+    background: (0, 0, 0, 0.6);
+    color: #151515;
+    margin-top: 100px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 3px grey;
 }
 
-#image {
-    height: 150px;
-    width: 150px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-}
-
-#name {
-    letter-spacing: 0.5em;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-#web {
-    letter-spacing: 0.2em;
-    margin-top: 30px;
-}
-
-svg {
-    height: 1em;
-    margin-left: 40px;
-}
-
-#head {
-    font-weight: bold;
-}
-
-#exp1 {
-    display: grid;
-    grid-template-columns: 1fr 2fr 4fr;
-    margin-right: 20px;
-}
-
-p {
-    text-align: justify;
-}
-
-#ent {
-    margin: 0px;
-}
-
-#underline {
-    width: 440px;
-    height: 7px;
-    margin-top: 20px;
-    background: #ceced0;
-}
-
-#exp {
-    background: #CDCDCF;
-    margin: 10px;
-}
-
-#wrapper {
-    padding: 0px;
-    margin-top: 50px;
+.contact-form h1 {
+    font-family: 'Bad Script', cursive;
+    font-size: 50px;
+    margin-bottom: 30px;
 }
 
 footer {
@@ -229,13 +136,6 @@ footer h5 {
         width: 60%;
         outline-offset: -10px;
     }
-    .about-image img {
-        width: 70%;
-        margin-left: auto;
-    }
-    .lihtboxOverlay {
-        overflow: hidden;
-    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -244,9 +144,6 @@ footer h5 {
         width: 40%;
         outline: 10px solid rgba(56, 65, 71, .5);
         outline-offset: -20px;
-    }
-    .about-image img {
-        width: 80%;
     }
     .lb-close {
         position: absolute;
