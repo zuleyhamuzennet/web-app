@@ -1,10 +1,6 @@
-# web-projem
-projee oluşturuldu
-
-
-Web Teknolojileri Proje Ödevi
-   					 
-                                                                                                                                                                                                                                                                                               
+# web-app
+Web Teknolojileri Projesi
+   					                                                                                                                                                                                                                                                                                       
 Projenin Amacı:  Yaşadığımız yeri ve kendimizi tanıtan bir web sitesi geliştirmek.
 Proje İçeriği :
 Anasayfada 
